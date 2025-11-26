@@ -94,7 +94,7 @@ while ($true) {
         }
         elseif ($ChoserPF -eq 3) {
                        Write-Host "Downloading Hitdelay..."
-            $urlPB = "https://download1581.mediafire.com/ixezjjsww55g4ZIZC0cJmNRlMFEXn9Dp6JlPul3gHOiHU-pcIIov9BxU6OvXTa7Dz5ktuipSTP1k4J0wcTjTSLBmmZXgUrAOYJimTjB4EJoME_W_xskpnpsrInhNOg9JuCjbxAg4co6Gy3S59x4TiuxLod490U5YlD7ROOjtHIpXG-gH/2jxrp9v8bxv7dxl/Forge.zip"
+            $urlPB = "https://download1581.mediafire.com/f0md1ya6jbsgLb3T51C1TU4vTxpC8EKSsXZTst5WV7xBK_5jGh9VOe5BE-6TKu6Nzfj34gbzRiorORcGCXCzQ-4HQX-Cc_pMVoobxskrSdrdPnvcLXoUw1PVDUltaAGFBs1qDT6y7dCMXT-mCANCCrbtYp-hCLeqOv5J2TpeTedCSnNJ/2jxrp9v8bxv7dxl/Forge.zip"
             $destinationFilePB = "$OutfilePath\Forge.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
@@ -117,7 +117,7 @@ while ($true) {
 
         if ($Choser2 -eq 1) {
                        Write-Host "Downloading Hitdelay..."
-            $urlPB = "https://download1347.mediafire.com/qsid21tqn8xgdj0Y_KZg1Q8fCA24g1s8-gHFQHgflC09hza0nsiz5DYghjnjcplfKNl6almRpj8r1R4R9NcTK0U-bHL0maqsc8EznyygXnvUc84mLLpahHLwFzFo84z5GFVLCXXkXAJzMR5QF6jjJ5j1NkTD4dFNqq7mSoO_MMTacD56/g9o1wosjlkavrvh/LunarQT.zip"
+            $urlPB = "https://download1347.mediafire.com/pdux5nqynf3gj9TkNmFf3NUUI8aSjMibO8XhrToSjdoouLq8mulKSMnwm66o5GFRTyrN_bNSgpw9XWryR1PvUyImL2ZTaEOjKjDegoR_XAG52wm0-ArTHdC0Lm5_h_BjmfBnJqaDf80tdMQovApAFp_pY6rCclHdbw8mDt02Ti7exz6W/g9o1wosjlkavrvh/LunarQT.zip"
             $destinationFilePB = "$OutfilePath\LunarQT.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
