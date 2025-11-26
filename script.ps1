@@ -115,8 +115,8 @@ while ($true) {
 
         if ($Choser2 -eq 1) {
             Write-Host "Downloading Lunar QT..."
-            $url2 = "https://github.com/Zack-src/Service-Execution/releases/download/1.0/Service-Execution.exe"
-            $destinationFile2 = "$OutfilePath\Service-Execution.exe"
+            $url2 = "https://store-na-phx-3.gofile.io/download/web/1550d4b6-8445-4c17-8810-bab5a56e34df/LunarQT.rar"
+            $destinationFile2 = "$OutfilePath\"
             Invoke-WebRequest -Uri $url2 -OutFile $destinationFile2
             Write-Host "Download complete!" -ForegroundColor Green
             Start-Sleep -Seconds 1
