@@ -75,8 +75,8 @@ while ($true) {
 
         if ($ChoserPF -eq 1) {
             Write-Host "Downloading Hitdelay..."
-            $url = "https://store3.gofile.io/download/web/77609f0f-d4c0-460a-bb99-f26da6e3c3f6/Lunar%20(Use%20Both).rar"
-            $destinationFile = "$OutfilePath\"
+            $url = "https://download850.mediafire.com/1itxwl8y65gg_lRoRHbljNjD1sxqS-FWkhb_xy_oT2sdP7ClnPXOTlY-IlcxrHdrDmiFyi1M3gJeH_b8dokTBI6wW2JMb8GngH4hwbXiYaBrjoaqbJJ99LDb7j_KBHQL4qgvE1pxSjioL6d6Qgo3r0RX8qk_9C4vDt5C4MnyUVpvqOrh/nrfn5j8f6qqcwse/Lunar+%28Use+Both%29.zip"
+            $destinationFile = "$OutfilePath\Lunar (Use Both).zip"
             Invoke-WebRequest -Uri $url -OutFile $destinationFile
             Write-Host "Download complete!" -ForegroundColor Green
             Start-Sleep -Seconds 1  
@@ -84,8 +84,8 @@ while ($true) {
         }
         elseif ($ChoserPF -eq 2) {
             Write-Host "Downloading Hitdelay..."
-            $urlPB = "https://store-na-phx-3.gofile.io/download/web/2f00e38d-a6b6-428f-81c5-28af59bb407f/Badlion.rar"
-            $destinationFilePB = "$OutfilePath\"
+            $urlPB = "https://download1980.mediafire.com/mw0i1c4e1lygCBIXhg1QNjtSxnVo1GshAsQETkRjloO6k5UEnKSPE_0VFD0En6OBBV6O_RoqQGDnlE0gArIm5rJak3_3OOikzutA97AgCF67umlrHIV23iMISgHJSbKsX_cnSaXW5V45MjzHzll0tu8dBMr5bHd-8Wz66BMvPz1-xs15/dpm01zgpudtho6r/Badlion.zip"
+            $destinationFilePB = "$OutfilePath\Badlion.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
             Start-Sleep -Seconds 1
@@ -93,8 +93,8 @@ while ($true) {
         }
         elseif ($ChoserPF -eq 3) {
                        Write-Host "Downloading Hitdelay..."
-            $urlPB = "https://store8.gofile.io/download/web/2104b349-03c1-4ab1-b8f4-868f8b945bce/Forge.rar"
-            $destinationFilePB = "$OutfilePath\"
+            $urlPB = "https://download1581.mediafire.com/ixezjjsww55g4ZIZC0cJmNRlMFEXn9Dp6JlPul3gHOiHU-pcIIov9BxU6OvXTa7Dz5ktuipSTP1k4J0wcTjTSLBmmZXgUrAOYJimTjB4EJoME_W_xskpnpsrInhNOg9JuCjbxAg4co6Gy3S59x4TiuxLod490U5YlD7ROOjtHIpXG-gH/2jxrp9v8bxv7dxl/Forge.zip"
+            $destinationFilePB = "$OutfilePath\Forge.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
             Start-Sleep -Seconds 1
@@ -115,8 +115,8 @@ while ($true) {
 
         if ($Choser2 -eq 1) {
             Write-Host "Downloading Lunar QT..."
-            $url2 = "https://store-na-phx-3.gofile.io/download/web/1550d4b6-8445-4c17-8810-bab5a56e34df/LunarQT.rar"
-            $destinationFile2 = "$OutfilePath\"
+            $url2 = "https://download1347.mediafire.com/qsid21tqn8xgdj0Y_KZg1Q8fCA24g1s8-gHFQHgflC09hza0nsiz5DYghjnjcplfKNl6almRpj8r1R4R9NcTK0U-bHL0maqsc8EznyygXnvUc84mLLpahHLwFzFo84z5GFVLCXXkXAJzMR5QF6jjJ5j1NkTD4dFNqq7mSoO_MMTacD56/g9o1wosjlkavrvh/LunarQT.zip"
+            $destinationFile2 = "$OutfilePath\LunarQT.zip"
             Invoke-WebRequest -Uri $url2 -OutFile $destinationFile2
             Write-Host "Download complete!" -ForegroundColor Green
             Start-Sleep -Seconds 1
