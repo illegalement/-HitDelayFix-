@@ -5,6 +5,7 @@ function MainMenu {
     Clear-Host
     Logo                                                          
     Write-Host @"
+    
         [1] Hitdelay            [2] LunarQT
        
 
@@ -15,6 +16,7 @@ function Menu2 {
     Clear-Host
     Logo
     Write-Host @"
+    
         [1] Hitdelay                  [2] LunarQT
         
 
@@ -33,13 +35,9 @@ function Logo {
 ||_| |_|_|\__| |____/ \___|_|\__,_|\__, | |_|   |_/_/\_\|
 |                                  |___/                |
 '-------------------------------------------------------'
-                                                                              
-                                                                              
-                                                                                                 
-                                                                                                 
-                                                                                                 
+                                                                             
 "@ -ForegroundColor Blue                                                           
-    Write-Host -ForegroundColor Green "     by Miyuze"
+    Write-Host -ForegroundColor DarkRed "by Miyuze"
     Write-Host ""
 }
 # Caminho fixo
@@ -64,26 +62,29 @@ while ($true) {
     if ($Choser -eq 1) {
         Clear-Host
         Logo 
-        Write-Host "Choose an option to download.:"
+        Write-Host "Choose an option to download.:" -ForegroundColor White
         Write-Host ""
         Write-Host "        [1] LunarQT"
-        Write-Host "        [2] Badlion"
-        Write-Host "        [3] Forge"
-        Write-Host "        [4] Cancel"
+        Write-Host ""
+        Write-Host "        [2] Badlion" 
+        Write-Host ""
+        Write-Host "        [3] Forge" 
+        Write-Host ""
+        Write-Host "        [4] Cancel" -ForegroundColor Red
         Write-Host ""
         $ChoserPF = Read-Host "Enter the option number."
 
         if ($ChoserPF -eq 1) {
-            Write-Host "Downloading Hitdelay..."
-            $url = "https://download850.mediafire.com/1itxwl8y65gg_lRoRHbljNjD1sxqS-FWkhb_xy_oT2sdP7ClnPXOTlY-IlcxrHdrDmiFyi1M3gJeH_b8dokTBI6wW2JMb8GngH4hwbXiYaBrjoaqbJJ99LDb7j_KBHQL4qgvE1pxSjioL6d6Qgo3r0RX8qk_9C4vDt5C4MnyUVpvqOrh/nrfn5j8f6qqcwse/Lunar+%28Use+Both%29.zip"
-            $destinationFile = "$OutfilePath\Lunar (Use Both).zip"
-            Invoke-WebRequest -Uri $url -OutFile $destinationFile
+                       Write-Host "Downloading Hitdelay..."
+            $urlPB = "https://download850.mediafire.com/1itxwl8y65gg_lRoRHbljNjD1sxqS-FWkhb_xy_oT2sdP7ClnPXOTlY-IlcxrHdrDmiFyi1M3gJeH_b8dokTBI6wW2JMb8GngH4hwbXiYaBrjoaqbJJ99LDb7j_KBHQL4qgvE1pxSjioL6d6Qgo3r0RX8qk_9C4vDt5C4MnyUVpvqOrh/nrfn5j8f6qqcwse/Lunar+%28Use+Both%29.zip"
+            $destinationFilePB = "$OutfilePath\Lunar (Use Both).zip"
+            Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
-            Start-Sleep -Seconds 1  
+            Start-Sleep -Seconds 1
             Clear-Host
         }
         elseif ($ChoserPF -eq 2) {
-            Write-Host "Downloading Hitdelay..."
+                       Write-Host "Downloading Hitdelay..."
             $urlPB = "https://download1980.mediafire.com/mw0i1c4e1lygCBIXhg1QNjtSxnVo1GshAsQETkRjloO6k5UEnKSPE_0VFD0En6OBBV6O_RoqQGDnlE0gArIm5rJak3_3OOikzutA97AgCF67umlrHIV23iMISgHJSbKsX_cnSaXW5V45MjzHzll0tu8dBMr5bHd-8Wz66BMvPz1-xs15/dpm01zgpudtho6r/Badlion.zip"
             $destinationFilePB = "$OutfilePath\Badlion.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
@@ -108,16 +109,17 @@ while ($true) {
         Logo 
         Write-Host "Choose an option to download.:"
         Write-Host ""
-        Write-Host "        [1] Download"
-        Write-Host "        [2] Cancel"
+        Write-Host "        [1] Download" -ForegroundColor Green
+        Write-Host ""
+        Write-Host "        [2] Cancel" -ForegroundColor Red
         Write-Host ""
         $Choser2 = Read-Host "Enter the option number."
 
         if ($Choser2 -eq 1) {
-            Write-Host "Downloading Lunar QT..."
-            $url2 = "https://download1347.mediafire.com/qsid21tqn8xgdj0Y_KZg1Q8fCA24g1s8-gHFQHgflC09hza0nsiz5DYghjnjcplfKNl6almRpj8r1R4R9NcTK0U-bHL0maqsc8EznyygXnvUc84mLLpahHLwFzFo84z5GFVLCXXkXAJzMR5QF6jjJ5j1NkTD4dFNqq7mSoO_MMTacD56/g9o1wosjlkavrvh/LunarQT.zip"
-            $destinationFile2 = "$OutfilePath\LunarQT.zip"
-            Invoke-WebRequest -Uri $url2 -OutFile $destinationFile2
+                       Write-Host "Downloading Hitdelay..."
+            $urlPB = "https://download1347.mediafire.com/qsid21tqn8xgdj0Y_KZg1Q8fCA24g1s8-gHFQHgflC09hza0nsiz5DYghjnjcplfKNl6almRpj8r1R4R9NcTK0U-bHL0maqsc8EznyygXnvUc84mLLpahHLwFzFo84z5GFVLCXXkXAJzMR5QF6jjJ5j1NkTD4dFNqq7mSoO_MMTacD56/g9o1wosjlkavrvh/LunarQT.zip"
+            $destinationFilePB = "$OutfilePath\LunarQT.zip"
+            Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
             Start-Sleep -Seconds 1
             Clear-Host
