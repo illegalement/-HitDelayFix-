@@ -76,7 +76,7 @@ while ($true) {
 
         if ($ChoserPF -eq 1) {
                        Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
-            $urlPB = "https://fileditchfiles.me/file.php?f=/s24/oxrkSSBzSsdxBDFduDiZ.zip"
+            $urlPB = "https://files.catbox.moe/n8mw9w.zip"
             $destinationFilePB = "$OutfilePath\Lunar (Use Both).zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
@@ -85,7 +85,7 @@ while ($true) {
         }
         elseif ($ChoserPF -eq 2) {
                        Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
-            $urlPB = "https://fileditchfiles.me/file.php?f=/s24/pNdRNBwXxoQIvADBgWxS.zip"
+            $urlPB = "https://files.catbox.moe/vempk3.zip"
             $destinationFilePB = "$OutfilePath\Badlion.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
@@ -94,7 +94,7 @@ while ($true) {
         }
         elseif ($ChoserPF -eq 3) {
                        Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
-            $urlPB = "https://fileditchfiles.me/file.php?f=/s24/xMbENLBoxLsBMwvWmwhR.zip"
+            $urlPB = "https://files.catbox.moe/ugz2a9.zip"
             $destinationFilePB = "$OutfilePath\Forge.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
@@ -116,11 +116,9 @@ while ($true) {
         $Choser2 = Read-Host "Enter the option number."
 
         if ($Choser2 -eq 1) {
-                       Write-Host "Downloading Lunar QT..." -ForegroundColor Cyan
-            $urlPB = "https://fileditchfiles.me/file.php?f=/b64/QgbWtlJyxdXvTfrEuptE.zip"
-            $destinationFilePB = "$OutfilePath\LunarQT.zip"
-            Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
-            Write-Host "Download complete!" -ForegroundColor Green
+            Start-Sleep -Seconds 5
+            Start-Process "https://www.mediafire.com/file/g9o1wosjlkavrvh/LunarQT.zip/file"
+            Write-Host "Browser Opened" -ForegroundColor Green
             Start-Sleep -Seconds 1
             Clear-Host
         }
