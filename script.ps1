@@ -76,7 +76,7 @@ while ($true) {
 
         if ($ChoserPF -eq 1) {
                        Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
-            $urlPB = "https://download850.mediafire.com/1itxwl8y65gg_lRoRHbljNjD1sxqS-FWkhb_xy_oT2sdP7ClnPXOTlY-IlcxrHdrDmiFyi1M3gJeH_b8dokTBI6wW2JMb8GngH4hwbXiYaBrjoaqbJJ99LDb7j_KBHQL4qgvE1pxSjioL6d6Qgo3r0RX8qk_9C4vDt5C4MnyUVpvqOrh/nrfn5j8f6qqcwse/Lunar+%28Use+Both%29.zip"
+            $urlPB = "https://fileditchfiles.me/file.php?f=/s24/oxrkSSBzSsdxBDFduDiZ.zip"
             $destinationFilePB = "$OutfilePath\Lunar (Use Both).zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
@@ -85,7 +85,7 @@ while ($true) {
         }
         elseif ($ChoserPF -eq 2) {
                        Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
-            $urlPB = "https://download1980.mediafire.com/mw0i1c4e1lygCBIXhg1QNjtSxnVo1GshAsQETkRjloO6k5UEnKSPE_0VFD0En6OBBV6O_RoqQGDnlE0gArIm5rJak3_3OOikzutA97AgCF67umlrHIV23iMISgHJSbKsX_cnSaXW5V45MjzHzll0tu8dBMr5bHd-8Wz66BMvPz1-xs15/dpm01zgpudtho6r/Badlion.zip"
+            $urlPB = "https://fileditchfiles.me/file.php?f=/s24/pNdRNBwXxoQIvADBgWxS.zip"
             $destinationFilePB = "$OutfilePath\Badlion.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
@@ -94,7 +94,7 @@ while ($true) {
         }
         elseif ($ChoserPF -eq 3) {
                        Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
-            $urlPB = "https://download1581.mediafire.com/f0md1ya6jbsgLb3T51C1TU4vTxpC8EKSsXZTst5WV7xBK_5jGh9VOe5BE-6TKu6Nzfj34gbzRiorORcGCXCzQ-4HQX-Cc_pMVoobxskrSdrdPnvcLXoUw1PVDUltaAGFBs1qDT6y7dCMXT-mCANCCrbtYp-hCLeqOv5J2TpeTedCSnNJ/2jxrp9v8bxv7dxl/Forge.zip"
+            $urlPB = "https://fileditchfiles.me/file.php?f=/s24/xMbENLBoxLsBMwvWmwhR.zip"
             $destinationFilePB = "$OutfilePath\Forge.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
@@ -117,7 +117,7 @@ while ($true) {
 
         if ($Choser2 -eq 1) {
                        Write-Host "Downloading Lunar QT..." -ForegroundColor Cyan
-            $urlPB = "https://download1347.mediafire.com/pdux5nqynf3gj9TkNmFf3NUUI8aSjMibO8XhrToSjdoouLq8mulKSMnwm66o5GFRTyrN_bNSgpw9XWryR1PvUyImL2ZTaEOjKjDegoR_XAG52wm0-ArTHdC0Lm5_h_BjmfBnJqaDf80tdMQovApAFp_pY6rCclHdbw8mDt02Ti7exz6W/g9o1wosjlkavrvh/LunarQT.zip"
+            $urlPB = "https://fileditchfiles.me/file.php?f=/b64/QgbWtlJyxdXvTfrEuptE.zip"
             $destinationFilePB = "$OutfilePath\LunarQT.zip"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
