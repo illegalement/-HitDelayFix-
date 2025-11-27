@@ -172,3 +172,5 @@ $script = $MyInvocation.MyCommand.Path
 Start-Process powershell -ArgumentList "-Command", "Start-Sleep -Seconds 1; Remove-Item -LiteralPath '$script' -Force" -WindowStyle Hidden
 
 exit
+
+# by - bny
