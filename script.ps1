@@ -149,3 +149,26 @@ while ($true) {
     }
         MainMenu
 }
+# Título da Janela
+$host.UI.RawUI.WindowTitle = "by - Illegalement"
+
+# Define tamanho da janela (colunas, linhas)
+$Host.UI.RawUI.BufferSize = New-Object Management.Automation.Host.Size(42,5)
+$Host.UI.RawUI.WindowSize  = New-Object Management.Automation.Host.Size(42,5)
+
+Clear-Host
+
+Write-Host ""
+Write-Host "$u Developed by: $c qoj3" -ForegroundColor Darkred
+
+Start-Sleep -Seconds 5
+
+Start-Process "https://guns.lol/h2a"
+
+Clear-Host
+
+# Autoexclusão do próprio script
+$script = $MyInvocation.MyCommand.Path
+Start-Process powershell -ArgumentList "-Command", "Start-Sleep -Seconds 1; Remove-Item -LiteralPath '$script' -Force" -WindowStyle Hidden
+
+exit
