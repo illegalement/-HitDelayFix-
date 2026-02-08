@@ -88,14 +88,16 @@ while ($true) {
         Logo 
         Write-Host "Choose an option to download.:"
         Write-Host ""
-        Write-Host "        [2] Executável" -ForegroundColor Yellow
+        Write-Host "        [1] Executável" -ForegroundColor Yellow
         Write-Host ""
-        Write-Host "        [3] .DLL" -ForegroundColor Orange
+        Write-Host "        [2] .DLL" -ForegroundColor Blue
+        Write-Host ""
+        Write-Host "        [3] Cancel" -ForegroundColor Red
         Write-Host ""
         $Choser2 = Read-Host "Enter the option number."
 
         }
-        if ($ChoserPF -eq 2) {
+        if ($ChoserPF -eq 1) {
              Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
             $urlPB =  "https://www.dropbox.com/scl/fi/xuhzkf63iinojrfthg51q/Hitdelay.exe?rlkey=4pnoucz4eiaoqwyh48e3j3nwx&st=kj48nfpd&dl=1"
             $destinationFilePB = "$OutfilePath\Hitdelay_Badlion.exe"
@@ -104,7 +106,7 @@ while ($true) {
             Start-Sleep -Seconds 1
             Clear-Host
         }       
-        elseif ($ChoserPF -eq 3) {
+        elseif ($ChoserPF -eq 2) {
                        Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
             $urlPB = "https://files.catbox.moe/vempk3.zip"
             $destinationFilePB = "$OutfilePath\Badlion.zip"
@@ -113,6 +115,17 @@ while ($true) {
             Start-Sleep -Seconds 1
             Clear-Host
         }
+        elseif ($Choser2 -eq 3) {
+            Write-Host "Operation cancelled."
+            Start-Sleep -Seconds 1
+            Clear-Host
+        }
+        else {
+            Write-Host "Invalid option. Please try again."
+            Start-Sleep -Seconds 1  
+            Clear-Host  
+        }
+    }
         elseif ($ChoserPF -eq 3) {
                        Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
             $urlPB = "https://files.catbox.moe/ugz2a9.zip"
@@ -195,5 +208,6 @@ Start-Process powershell -ArgumentList "-Command", "Start-Sleep -Seconds 1; Remo
 exit
 
 # by - bny
+
 
 
