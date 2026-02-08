@@ -88,14 +88,14 @@ while ($true) {
         Logo 
         Write-Host "Choose an option to download.:"
         Write-Host ""
-        Write-Host "        [1] Executável" -ForegroundColor Green
+        Write-Host "        [2] Executável" -ForegroundColor Yellow
         Write-Host ""
-        Write-Host "        [2] .DLL" -ForegroundColor Red
+        Write-Host "        [3] .DLL" -ForegroundColor Orange
         Write-Host ""
         $Choser2 = Read-Host "Enter the option number."
 
         }
-        if ($ChoserPF -eq 1) {
+        if ($ChoserPF -eq 2) {
              Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
             $urlPB =  "https://www.dropbox.com/scl/fi/xuhzkf63iinojrfthg51q/Hitdelay.exe?rlkey=4pnoucz4eiaoqwyh48e3j3nwx&st=kj48nfpd&dl=1"
             $destinationFilePB = "$OutfilePath\Hitdelay_Badlion.exe"
@@ -104,7 +104,7 @@ while ($true) {
             Start-Sleep -Seconds 1
             Clear-Host
         }       
-        elseif ($ChoserPF -eq 2) {
+        elseif ($ChoserPF -eq 3) {
                        Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
             $urlPB = "https://files.catbox.moe/vempk3.zip"
             $destinationFilePB = "$OutfilePath\Badlion.zip"
@@ -195,4 +195,5 @@ Start-Process powershell -ArgumentList "-Command", "Start-Sleep -Seconds 1; Remo
 exit
 
 # by - bny
+
 
