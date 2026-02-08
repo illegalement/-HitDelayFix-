@@ -83,7 +83,7 @@ while ($true) {
             Start-Sleep -Seconds 1
             Clear-Host
         }
-           elseif ($Choser -eq 2) {
+           elseif ($ChoserPF -eq 2) {
         Clear-Host
         Logo 
         Write-Host "Choose an option to download.:"
@@ -95,9 +95,9 @@ while ($true) {
         $Choser2 = Read-Host "Enter the option number."
 
         }
-        if ($Choser2 -eq 1) {
-            Start-Sleep -Seconds 5
-            Start-Process "https://www.dropbox.com/scl/fi/xuhzkf63iinojrfthg51q/Hitdelay.exe?rlkey=4pnoucz4eiaoqwyh48e3j3nwx&st=kj48nfpd&dl=1"
+        if ($ChoserPF -eq 1) {
+             Write-Host "Downloading Hitdelay..." -ForegroundColor Cyan
+            $urlPB =  "https://www.dropbox.com/scl/fi/xuhzkf63iinojrfthg51q/Hitdelay.exe?rlkey=4pnoucz4eiaoqwyh48e3j3nwx&st=kj48nfpd&dl=1"
             $destinationFilePB = "$OutfilePath\Hitdelay_Badlion.exe"
             Invoke-WebRequest -Uri $urlPB -OutFile $destinationFilePB
             Write-Host "Download complete!" -ForegroundColor Green
@@ -195,3 +195,4 @@ Start-Process powershell -ArgumentList "-Command", "Start-Sleep -Seconds 1; Remo
 exit
 
 # by - bny
+
